@@ -13,33 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\ImovelController;
 
-Route::get('/teste', function () {
-    $teste="testando";
-    return view('teste',[
-        'teste' => $teste,
-    ]);
-});
+Route::get('/', [ImovelController::class, 'index']);
 
-Route::get('/imoveis', function () {
-    
-    $busca=request('search');
+Route::get('/imoveis/locar', [ImovelController::class, 'locar']);
 
-    $imoveis="Mostrando imóveis";
-    
-    return view('imoveis',[
-        'imoveis' => $imoveis,
-        'busca' => $busca,
-    ]);
-});
+Route::get('/imoveis/cadastrar', [ImovelController::class, 'cadastrarImovel']);
 
-Route::get('/imoveis/{id?}', function ($id = null) {
-    $imovel="Mostrando imovel";
-    return view('imovel',[
-        'imovel' => $imovel,
-        'id' => $id,
-    ]);
-});
+Route::get('/imoveis', [ImovelController::class, 'verImoveis']);
+
+Route::get('/imoveis/{id?}', [ImovelController::class, 'verImovelUnico']);
+
+Route::post('/imoveis', [ImovelController::class, 'store']);

@@ -37,7 +37,7 @@ Cancelar Locação;
 Iniciar estadia;
 Finalizar estadia;
 
-A listagem de imóveis podemos realizar filtros por quantidade máxima de pessoas ou valores;
+A listagem de imóveis podemos realizar filtros por quantidade máxima de pessoas ou valores; #max_pessoas e val no mysql
 
 O locatário pode ver as informações de um imóvel.
 

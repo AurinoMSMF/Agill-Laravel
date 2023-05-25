@@ -33,21 +33,26 @@
                             <a href="/imoveis" class="nav-link">Imóveis</a>
                         </il>
                         <il class="nav-item">
-                            <a href="/" class="nav-link">Locar imóvel</a>
+                            <a href="/imoveis/locar" class="nav-link">Locar imóvel</a>
                         </il>
                         <il class="nav-item">
                             <a href="/" class="nav-link">Entrar</a>
                         </il>
                         <il class="nav-item">
-                            <a href="/" class="nav-link">Cadastrar</a>
+                            <a href="/" class="nav-link">Cadastre-se</a>
                         </il>
                     </ul>
                 </div>
             </nav>
         </header>
-        @yield('content')
+        <div class="container-fluid">
+            @if(session('msg'))
+                <p class="msg">{{ session('msg') }}</p>
+            @endif
+            @yield('content')
+        </div>    
         <footer>
-            Agil Teste Imóveis &copy; 2023
+            <p id="footer-text">Agil Teste Imóveis &copy; 2023</p>
         </footer>
     </body>
 </html>

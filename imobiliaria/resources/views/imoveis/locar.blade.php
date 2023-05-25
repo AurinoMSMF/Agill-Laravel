@@ -5,6 +5,6 @@
 
 @section('content')
 
-            <h2>{{ $imovel }} {{ $id }}</h2>
+    <h1>Locar imóvel</h1>
 
 @endsection

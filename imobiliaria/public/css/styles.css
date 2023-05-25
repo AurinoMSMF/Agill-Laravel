@@ -2,6 +2,12 @@
     font-family: 'Open Sans';
 }
 
+.btn-primary{
+    background-color: rgb(102, 102, 247);
+    width: 125px;
+    height: 35px;
+}
+
 #navbar img{
     width: 50px;
     margin-left: 15px;
@@ -11,8 +17,49 @@
     padding: 20px;
 }
 
+#img-welcome{
+    width: 1412px;
+}
+
 footer{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    
+    background-color: rgb(102, 102, 247);
+    height: 100px;
     text-align: center;
 }
+
+#footer-text{
+    padding: 40px;
+}
+
+.card_imovel{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 30px;
+}
+
+.exemplo_imovel{
+    max-width: 400px;
+    
+}
+
+.titulo_pagina_imoveis{
+    text-align: center;
+}
+
+.btn_cadastrar{
+    background-color: rgb(102, 102, 247);
+    margin-top: 5px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.msg{
+    background-color: rgb(72, 199, 114);
+    border-radius: 10px;
+    text-align: center;
+}
+
+
